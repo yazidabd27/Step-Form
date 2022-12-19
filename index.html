@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    </head>
+    <body>
+        <main>
+            <div class="step-form row">
+                <div class="col-lg-4">
+                    <img src="assets/images/bg-sidebar-desktop.svg" alt="" class="d-none d-lg-block">
+                    <img src="assets/images/bg-sidebar-mobile.svg" alt="" class="d-lg-none img-fluid">
+                    <div class="sidebar">
+                        <div class="setp1-option option row flex-nowrap active">
+                            <span class="step-number">1</span>
+                            <span class="step-name">
+                                STEP1
+                                <br>
+                                <span>YOUR INFO</span>
+                            </span>
+                        </div>
+                        <div class="setp2-option option row flex-nowrap">
+                            <span class="step-number">2</span>
+                            <span class="step-name">
+                                STEP2
+                                <br>
+                                <span>SELECT PALN</span>
+                            </span>
+                        </div>
+                        <div class="setp3-option option row flex-nowrap">
+                            <span class="step-number">3</span>
+                            <span class="step-name">
+                                STEP3
+                                <br>
+                                <span>ADD-ONS</span>
+                            </span>
+                        </div>
+                        <div class="setp4-option option row flex-nowrap">
+                            <span class="step-number">4</span>
+                            <span class="step-name">
+                                STEP4
+                                <br>
+                                <span>SUMMARY</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="form">
+                        <div class="step step-1">
+                            <h3>Personal info</h3>
+                            <p>Please provide your name, email address, and phone number</p>
+                            <form action="">
+                                <div class="input">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" placeholder="e.g. Stephen King">
+                                </div>
+                                <div class="input">
+                                    <label for="email">Email Address</label>
+                                    <input type="text" id="email" placeholder="e.g. StephenKing@lorem.com">
+                                </div>
+                                <div class="input">
+                                    <label for="number">Phone Number</label>
+                                    <input type="text" id="number" placeholder="e.g. +1 234 567 890">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="step step-2 d-none">
+                            <h3>Select your plan</h3>
+                            <p>You have the option of monthly or yearly billing.</p>
+                            <div class="offers row">
+                                <div class="col-lg-4">
+                                    <div class="offer arcade selected">
+                                        <img src="assets/images/icon-arcade.svg" alt="">
+                                        <div class="description">
+                                            <div class="offer-title">
+                                                Arcade
+                                            </div>
+                                            <div class="price">
+                                                <div class="monthly" data-price="9">$9/mo</div>
+                                                <div class="yearly d-none" data-price="90">
+                                                    $90/yr
+                                                    <span>2 months free</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="offer advanced">
+                                        <img src="assets/images/icon-advanced.svg" alt="">
+                                        <div class="description">
+                                            <div class="offer-title">
+                                                Advanced
+                                            </div>
+                                            <div class="price">
+                                                <div class="monthly" data-price="12">$12/mo</div>
+                                                <div class="yearly d-none" data-price="120">
+                                                    $120/yr
+                                                    <span>2 months free</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="offer pro">
+                                        <img src="assets/images/icon-pro.svg" alt="">
+                                        <div class="description">
+                                            <div class="offer-title">
+                                                Pro
+                                            </div>
+                                            <div class="price">
+                                                <div class="monthly" data-price="15">$15/mo</div>
+                                                <div class="yearly d-none" data-price="150">
+                                                    $150/yr
+                                                    <span>2 months free</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offer-duration">
+                                <label class="mo chosen">Monthly</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <label class="ye">Yearly</label>
+                            </div>
+                        </div>
+                        <div class="step step-3 d-none">
+                            <h3>Pick add-ons</h3>
+                            <p>Add-ons help enhance your gaming experience.</p>
+                            <div class="features">
+                                <div class="feature service">
+                                    <input type="checkbox">
+                                    <div class="description">
+                                        <span class="d-block feature-name">Online servie</span>
+                                        Access to multiplayer games
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="monthly" data-price="1">+$1/mo</span>
+                                        <span class="yearly d-none" data-price="10">+$10/yr</span>
+                                    </div>
+                                </div>
+                                <div class="feature storage">
+                                    <input type="checkbox">
+                                    <div class="description">
+                                        <span class="d-block feature-name">Larger storage</span>
+                                        Extra 1TB of cloud save
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="monthly" data-price="2">+$2/mo</span>
+                                        <span class="yearly d-none" data-price="20">+$20/yr</span>
+                                    </div>
+                                </div>
+                                <div class="feature profile">
+                                    <input type="checkbox">
+                                    <div class="description">
+                                        <span class="d-block feature-name">Customizable profile</span>
+                                        Custom theme on your profile
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="monthly" data-price="2">+$2/mo</span>
+                                        <span class="yearly d-none" data-price="20">+$20/yr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step-4 d-none">
+                            <h3>Finishing up</h3>
+                            <p>Double-check everything looks OK before confirming.</p>
+                            <div class="bill">
+                                <div class="selected-plan d-flex justify-content-between align-items-center">
+                                    <div class="plan-name">
+                                        <span class="name"></span>
+                                        <br>
+                                        <span class="change"><u>change</u></span>
+                                    </div>
+                                    <div class="plan-price"></div>
+                                </div>
+                                <hr>
+                                <div class="added-features">
+
+                                </div>
+                            </div>
+                            <div class="total d-flex justify-content-between align-items-center">
+                                <div>
+                                    Total 
+                                    <span class="per-month">(per month)</span>
+                                    <span class="per-year d-none">(per year)</span>
+                                </div>
+                                <span class="total-price"></span>
+                            </div>
+                        </div>
+                        <div class="step step-5 d-none">
+                            <img src="assets/images/icon-thank-you.svg" alt="">
+                            <h3>Thank you!</h3>
+                            <p>
+                                Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support , please feel
+                                free to email us at support@loremgaming.com.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev">Go Back</button>
+                        <button class="next">Next Step</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="main.js"></script>
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
